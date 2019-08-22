@@ -7,9 +7,19 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1>Cifra de César</h1>
+      <form>
+        <input id ="msg" type="text" placeholder="Digite seu texto" >
+        <input id="offset" type="number" placeholder="Escolha o numero" />
+        <input type="submit" onClick="clique()" value="Codificar" />
+        <input type="text" placeholder="Digite seu texto " />
+        <input type="submit" onClick="decodificar()" value="Decodificar" />
+
+      </form>
+      <p id="msg-codificar"></p>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
+
