@@ -3,7 +3,7 @@ window.cipher = {
   decode: decode,
 };
 
-function encode (msg, offset) {
+function encode (offset, msg) {
   var salvar = "";
   for (var i = 0; i < msg.length; i++) {
     let codificar = ((msg.charCodeAt(i) - 65 + offset) % 26) + 65;
@@ -12,7 +12,7 @@ function encode (msg, offset) {
   return salvar;
 }
 
-function decode (cod, offset) {
+function decode (offset, cod) {
   var decod = "";
   for (var i = 0; i <cod.length; i++) {
     let decodificar = ((cod.charCodeAt(i) - 90 - offset) % 26) + 90;
