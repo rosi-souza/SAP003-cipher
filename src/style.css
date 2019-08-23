@@ -1,0 +1,43 @@
+body {
+  background-color: #FFC1C1;
+  margin-top: 150px;
+}
+.home {
+  text-align: center;
+  background-color:#CD9B9B;
+}
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: FreeMono, monospace;
+  padding: 8px;
+}
+.msg {
+  padding: 10px;
+}
+.submit {
+  padding: 10px;
+}
+.btn {
+  width: 200px;
+  height: 30px;
+  border: 1px solid none;
+  border-radius: 5px;
+  box-shadow: none;
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+.content {
+  height: 60px;
+  width: 500px;
+  text-align: center;
+  font-size: 18px;
+}
+.key {
+  border-radius: 200px;
+  height: 20px;
+  border: solid 1px;
+  border-color: gray;
+  padding: 2px;
+}

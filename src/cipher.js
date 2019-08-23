@@ -4,7 +4,7 @@ window.cipher = {
 };
 
 function encode (msg, offset) {
-  var salvar = '';
+  var salvar = "";
   for (var i = 0; i < msg.length; i++) {
     let codificar = ((msg.charCodeAt(i) - 65 + offset) % 26) + 65;
     salvar += String.fromCharCode(codificar);
@@ -13,12 +13,12 @@ function encode (msg, offset) {
 }
 
 function decode (cod, offset) {
-  var decod = '';
+  var decod = "";
   for (var i = 0; i <cod.length; i++) {
-    let decodificar = ((cod.charCodeAt(i) - 65 + offset) % 26) + 65;
+    let decodificar = ((cod.charCodeAt(i) - 90 - offset) % 26) + 90;
     decod += String.fromCharCode(decodificar);
-
   }
+  return decod;
 }
 // para saber codigo asc = string.charcode(posição da letra);
 // codigo asc inicia em 65 e fnaliza em 90.

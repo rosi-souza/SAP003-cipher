@@ -11,7 +11,7 @@
   },
   "rules": {
     "indent": ["error", 2],
-    "quotes": [1, "single"],
+    "quotes": ["error", "double"],
     "semi": ["error", "always"],
     "camelcase": ["error", { "properties": "always" }],
     "keyword-spacing": ["error", { "before": true }],

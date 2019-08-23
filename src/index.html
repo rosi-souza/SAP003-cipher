@@ -7,16 +7,27 @@
   </head>
   <body>
     <div id="root">
-      <h1>Cifra de César</h1>
-      <form>
-        <input id ="msg" type="text" placeholder="Digite seu texto" >
-        <input id="offset" type="number" placeholder="Escolha o numero" />
-        <input type="submit" onClick="clique()" value="Codificar" />
-        <input type="text" placeholder="Digite seu texto " />
-        <input type="submit" onClick="decodificar()" value="Decodificar" />
-
-      </form>
-      <p id="msg-codificar"></p>
+      <div class="home">
+        <p class="title">Cifra de César<p>
+          <!-- <img src="./cofre.svg" alt="cofre" /> -->
+        <form>
+          <div class="msg">
+            <input class="content" id ="msg" placeholder="Digite seu texto" >
+          </div>
+          <input class="key" id="offset" type="number" placeholder="Escolha a senha" />
+            <div class="submit">
+              <input class="btn"type="submit" onClick="clique()" value="Codificar" />
+            </div>
+          <input class="content"  id="text" placeholder="Digite seu texto " />
+          <div class="submit">
+            <input class="btn" type="submit" onClick="decodificar()" value="Decodificar" />
+          </div>
+        </form>
+        <div class="content-text">
+          <p id="msg-codificar"></p>
+          <p id="msg-decodificar"></p>
+        </div>
+      </div>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
