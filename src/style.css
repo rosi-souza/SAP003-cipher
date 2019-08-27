@@ -1,16 +1,22 @@
 body {
-  background-color: #FFC1C1;
-  margin-top: 150px;
+  text-align: center;  
 }
 .home {
-  text-align: center;
-  background-color:#CD9B9B;
+  display: inline-block;
+  position: relative;
+  left: 0px;
+  right: 100px;
 }
 .title {
-  font-size: 30px;
+  font-size: 60px;
   font-weight: 700;
   font-family: FreeMono, monospace;
-  padding: 8px;
+  padding: 50px;
+  color: white;
+}
+.box-title {
+  background-color: black;
+  height: 150px;
 }
 .msg {
   padding: 10px;
@@ -40,4 +46,10 @@ body {
   border: solid 1px;
   border-color: gray;
   padding: 2px;
+}
+img {
+  height: 90px;
+  position: absolute;
+  right: 100px;
+  margin-top: 30px
 }

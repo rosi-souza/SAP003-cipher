@@ -20,9 +20,6 @@ function encode (offset, msg) {
       let codificarminuscula = ((msg.charCodeAt(i) - 97 + offset) % 26) + 97;
       salvar += String.fromCharCode(codificarminuscula);
     }
-    else {
-      alert("Digite sua mensagem");
-    }
   }
   return salvar;
 }

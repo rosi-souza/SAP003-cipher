@@ -7,28 +7,32 @@
   </head>
   <body>
     <div id="root">
-      <div class="home">
-        <p class="title">Cifra de César<p>
-          <!-- <img src="./cofre.svg" alt="cofre" /> -->
-        <form>
-          <div class="msg">
-            <input class="content" id ="msg" placeholder="Digite seu texto" >
-          </div>
-          <input class="key" id="offset" type="number" placeholder="Escolha a senha" />
-            <div class="submit">
-              <input class="btn"type="submit" id="clique" value="Codificar" />
-            </div>
-          <input class="content"  id="text" placeholder="Digite seu texto " />
-          <div class="submit">
-            <input class="btn" type="submit" id="decodificar" value="Decodificar" />
-          </div>
-        </form>
-        <div class="content-text">
-          <p id="msg-codificar"></p>
-          <p id="msg-decodificar"></p>
-        </div>
+      <div class="box-title">
+        <img src="./feminism (1).svg" alt="cofre" />
+        <p class="title">Lovelace</p>
       </div>
-    </div>
+      <div class="container">
+        <!-- <hr/> -->
+          <div class="home">
+            <form>
+              <div class="msg">
+                <input class="content" id ="msg" placeholder="Digite seu texto" >
+              </div>
+              <input class="key" id="offset" placeholder="Escolha a senha" />
+                <div class="submit">
+                  <input class="btn"type="submit" id="clique" value="Codificar" />
+                </div>
+              <!-- <input class="content"  id="text" placeholder="Digite seu texto " /> -->
+              <div class="submit">
+                <input class="btn" type="submit" id="decodificar" value="Decodificar" />
+              </div>
+            </form>
+            <div class="content-text">
+              <p id="msg-codificar"></p>
+            </div>
+          </div>
+        </div>
+        <!-- <hr/> -->
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

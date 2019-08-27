@@ -12,10 +12,10 @@ document.getElementById("decodificar").addEventListener("click", decodificar);
 
 function decodificar() {
   event.preventDefault();
-  let cod = document.getElementById("text").value;
+  let cod = document.getElementById("msg").value;
   let offset = Number(document.getElementById("offset").value);
   let funcaodecod = window.cipher.decode(offset, cod);
-  document.getElementById("msg-decodificar").innerHTML=`${funcaodecod}`;
+  document.getElementById("msg-codificar").innerHTML=`${funcaodecod}`;
 }
 
 // para saber codigo asc = string.charcode(posição da letra);
