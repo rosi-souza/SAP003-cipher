@@ -17,8 +17,3 @@ function decodificar() {
   let funcaodecod = window.cipher.decode(offset, cod);
   document.getElementById("msg-codificar").innerHTML=`${funcaodecod}`;
 }
-
-// para saber codigo asc = string.charcode(posição da letra);
-// codigo asc inicia em 65 e fnaliza em 90.
-// (codigo)
-//(codigodaletraASC - codigo1letra + desloc) % tamanho da letra
