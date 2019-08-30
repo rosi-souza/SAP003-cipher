@@ -5,7 +5,7 @@ function clique() {
   let msg = document.getElementById("msg").value;
   let offset = Number(document.getElementById("offset").value);
   let codigo = window.cipher.encode(offset, msg);
-  document.getElementById("msg-codificar").innerHTML=`${codigo}`;
+  document.getElementById("msg-codificar").innerHTML=`Mensagem codificada: ${codigo}`;
 }
 
 document.getElementById("decodificar").addEventListener("click", decodificar);
@@ -15,5 +15,5 @@ function decodificar() {
   let cod = document.getElementById("msg").value;
   let offset = Number(document.getElementById("offset").value);
   let funcaodecod = window.cipher.decode(offset, cod);
-  document.getElementById("msg-codificar").innerHTML=`${funcaodecod}`;
+  document.getElementById("msg-codificar").innerHTML=`Mensagem decodificada: ${funcaodecod}`;
 }
