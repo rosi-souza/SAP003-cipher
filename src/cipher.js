@@ -14,7 +14,8 @@ function encode (offset, msg) {
       salvar += String.fromCharCode(codificarminuscula);
     }
     else {
-      salvar += " ";
+      let codificar = msg.charCodeAt(i);
+      salvar += String.fromCharCode(codificar);
     }
   }
   return salvar;
@@ -29,6 +30,10 @@ function decode (offset, cod) {
     } else if (cod.charCodeAt(i) >= 97 && cod.charCodeAt(i) <= 122) {
       let decodificarminuscula = ((cod.charCodeAt(i) - 122 - offset) % 26) + 122;
       decod += String.fromCharCode(decodificarminuscula);
+    }
+    else {
+      let codificar = cod.charCodeAt(i);
+      decod += String.fromCharCode(codificar);
     }
   } 
   return decod;
