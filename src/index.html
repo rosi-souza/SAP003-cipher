@@ -2,42 +2,50 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ada Chat</title>
+    <title>Ada</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
-      <div class="home">
-        <div class="box-title">
-          <img src="./feminism2.svg" alt="cofre" />
-          <div class="text">
-            <span class="title">Ada</span>
-            <p class="sub-title">Encontre apoio emocional em sua semelhante!</p>
-          </div>
-        </div>
+    <div class="box-title">
+      <img src="./feminism2.svg" alt="cofre" />
+      <div class="header">
+        <span class="title">Ada</span>
+        <p class="sub-title">Encontre apoio emocional em sua semelhante!</p>
+    </div>
+    <div class="home">
+      <p class="description">
+        Bem vinda! 
+        <br />
+        <br />
+        <strong>ADA</strong> é um serviço para auxiliar mulheres a 
+        criptografar mensagens, com finalidade de obter ajuda
+        referente a alguma situação de vulnerabilidade.
+        <br />
+        <br />
+        Acesse o formulário abaixo para codificar ou decodificar sua mensagem
+      </p>
     <div class="container">
       <form>
         <div class="msg">
-          <p>Digite sua mensagem para codificar ou decodificar.</p>
-          <textarea class="content" id ="msg"></textarea>
+          <p>Digite sua mensagem</p>
+          <textarea class="content" id ="msg" rows="4" cols="50"></textarea>
         </div>
-        <p>Digite a senha para codificar ou decodificar a mensagem.</p>
+        <p>Digite a senha</p>
         <div>
           <input class="key" id="offset" />
+          <span id="msg-error"></span>
         </div>
         <div class="submit">
-          <input class="btn-decode" type="submit" id="decodificar" value="Decodificar" />
-          <input class="btn-encode"type="submit" id="clique" value="Codificar" />
-          <div class="content-text">
-              <p id="msg-codificar"></p>
-            </div>
-          </div>
-        <!-- <input class="content"  id="text" placeholder="Digite seu texto " /> -->
+          <input class="btn decode" type="submit" id="decodificar" value="Decodificar" />
+          <input class="btn encode"type="submit" id="clique" value="Codificar" />
+        </div>
+        <div class="content-text">
+          <p id="msg-title"></p>
+          <textarea id="msg-codificar" rows="4" cols="50"></textarea>
         </div>
       </form>
-    
     </div>
-      </div>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
