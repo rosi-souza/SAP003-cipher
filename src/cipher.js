@@ -25,7 +25,7 @@ function decode (offset, cod) {
   var decod = "";
   for (var i = 0; i < cod.length; i++) {
     if (cod.charCodeAt(i) >= 65 && cod.charCodeAt(i) < 91) {
-      let decodificar = ((cod.charCodeAt(i) - 65 - offset) % 26) + 65;
+      let decodificar = ((cod.charCodeAt(i) - 91 - offset) % 26) + 91;
       decod += String.fromCharCode(decodificar);
     } else if (cod.charCodeAt(i) >= 97 && cod.charCodeAt(i) <= 122) {
       let decodificarminuscula = ((cod.charCodeAt(i) - 122 - offset) % 26) + 122;
